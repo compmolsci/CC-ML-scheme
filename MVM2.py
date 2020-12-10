@@ -43,6 +43,8 @@ class reg(object):
             ls2=[0];op2=[]
         else:
             op2,ls2= reg.largest_indices(t2,l2,shape2)
+        np.save('ls4', ls2)
+        np.save('ls2',ls1)
         return np.concatenate((op1,op2)),np.array(ls1),np.array(ls2)
     
     def largest_indices(arr,n,s):
