@@ -20,8 +20,8 @@ Fock=MP2.Fock_mo
 #print(Fock.shape)
 mappping='f2l'#inp.mapping
 import time
-l2=np.load('ls2.npy')  # Largest subset in sinlges excitation
-l4=np.load('ls4.npy')  # Largest subset in doubles excitation
+#l2=np.load('ls2.npy')  # Largest subset in sinlges excitation
+#l4=np.load('ls4.npy')  # Largest subset in doubles excitation
 
 
 #Doubles residue construction. All done in one go, no intermediates. Some diagrams are clubbed together. 
