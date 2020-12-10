@@ -193,6 +193,8 @@ if calc=='CCSD':
             reg.reg_train(t1,t2,thres)
             tim2=time.clock()
             print('model_train',tim2-tim1)
+    ls2=np.load('ls2.npy')
+    ls4=np.load('ls4.npy')
     for i in range(100):  #100 is basically a large number,
         timx=time.time()
         t1,t2,E_ccsd,eps_t= CCSD_reduced(i+1,t1,t2,E_old,ls2,ls4)
