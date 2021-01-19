@@ -59,7 +59,7 @@ def update_t1t2(R_ia,R_ijab,t1,t2):
     t1 = t1 + delt1
     t2 = t2 + delt2
     ntmax = np.size(t1)+np.size(t2)
-    eps = float(np.sum(abs(R_ia)+np.sum(abs(R_ijab)))/ntmax)
+    eps = float(np.sum(abs(R_ia))+np.sum(abs(R_ijab)))/ntmax
     print('eps',eps)
     return eps, t1, t2
 
